@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "rootDir": "./src/",
+    "module": "Node16",
+    "declaration": true,
+    "allowSyntheticDefaultImports": false,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "sourceMap": false,
+    "strict": true,
+    "target": "ES2022",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@GeneralTypes": ["../../types/general-types.d.ts"],
+      "@GraphqlTypes": ["../../types/graphql-types.d.ts"]
+    }
+  },
+  "compileOnSave": true,
+  "include": ["**/*.ts"],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

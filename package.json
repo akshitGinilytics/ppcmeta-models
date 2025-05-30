@@ -1,0 +1,33 @@
+{
+  "name": "@akshitginilytics/ppcmeta-models",
+  "version": "0.1.117",
+  "main": "./dist/index.js",
+  "type": "module",
+  "packageManager": "npm@9.3.0",
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com",
+    "directory": "dist",
+    "exclude": [
+      "src",
+      "test"
+    ]
+  },
+  "scripts": {
+    "build": "tsc",
+    "inc-version": "npm verison patch",
+    "deploy": "npm publish"
+  },
+  "dependencies": {
+    "@qualdesk/firestore-big-batch": "^0.0.2",
+    "dataloader": "^2.1.0",
+    "firebase-admin": "^11.4.1"
+  },
+  "types": "./dist/index.d.ts",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@akshitginilytics/ppcmeta-types": "0.3.0"
+  }
+}
